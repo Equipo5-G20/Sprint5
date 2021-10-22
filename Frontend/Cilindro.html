@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cilindro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+            <div class="parrafo">
+                <section id="seccion-1">
+              <h2>¿Qué es un cilindro?</h2>
+              <p>Un cilindro es un cuerpo geométrico que está formado por un rectángulo que gira alrededor de uno de sus lados. En matemáticas, también se define como la superficie cilíndrica que se forma cuando una recta llamada generatriz gira alrededor de otra recta paralela, a la que llamamos eje</p>
+              <h2>Elementos de un cilindro</h2>
+              <p>•	El eje es el lado del rectángulo que permanece fijo en el giro. <br>
+                •	Las bases son dos círculos, perpendiculares al eje. Son las tapas que cierran el cilindro. <br>
+                •	La altura es la distancia entre las dos bases. <br>
+                •	El radio (r) es la longitud desde el eje hasta el extremo del cilindro. Corresponde con el radio de la base.
+                </p>
+            </section>
+            <section id="seccion-2">
+            <h2>¿Cómo se calcula el área y volumen  de un cilindro?</h2>
+            <p>Área = 2 × π  × r × ( h + r ) <br>
+                Volumen =  π  × r^2  × h
+            </p>
+            <br>
+            <p>Calcular area y volumen<br>
+            </p>
+            <form id="formulario">
+                radio: <input type="text"  id="r"> metros.
+                <br>
+                altura: <input type="text"  id="h"> metros.
+                <br>
+         </form>
+         <input type="button" onClick="Area()" value="Calcular Area y Volumen"> <br>
+         <h2>Resultado</h2>
+                Area: <input type="text"  id="A">metros2.<br>
+                Volumen: <input type="text"  id="V">metros3.
+                <script>
+                    function Area()
+                    {
+                        var radio=Number(document.getElementById('r').value);
+                        var altura=Number(document.getElementById('h').value);
+                        var Area=2*3.14*radio*(altura+radio);
+                        var Volumen=3.14*(radio*radio)*altura;
+                        document.getElementById('A').value=Area
+                        document.getElementById('V').value=Volumen;
+                    }
+       
+                </script>
+            
+        </section>
+            </div>
+        </header>
+        <div class="capa"></div>
+        
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</html>

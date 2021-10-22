@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cuadrado</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+            <div class="parrafo">
+                <h2>¿Qué es un Cuadrado?</h2>
+                <p>El cuadrado es una figura geométrica plana que tiene cuatro lados iguales y cuatro vértices.</p>
+                <h2>Elementos de un Cuadrado</h2>
+                <p>
+                    •	Los lados también se llaman "aristas". Están marcados en color morado en la imagen siguiente. <br>
+                    •	Los vértices son las uniones entre dos segmentos, y están marcados con rojo.
+                    
+
+                </p>
+                <h2>¿Cómo se calcula el área y perimetro de un cuadrado?</h2>        
+                <p>
+                    Area = a^2 <br>
+                    Perimetro = 4 × a
+                </p>
+                <br>
+                 <p>Calcular area y perimetro<br>
+                 </p>
+                 <form id="formulario">
+                    arista: <input type="text" name="nombre" id ="a"> metros.
+                    <br>
+                          
+             </form>
+             <button onclick="Area()">Calcular Area y Perimetro</button> <br>
+              <h2>Resultado</h2>
+              Area: <input type="text" name="respuesta" id="A">metros2.<br>
+              Perimetro: <input type="text" name="respuesta" id="P">metros.
+              <script>
+                function Area()
+                {
+                    var arista=Number(document.getElementById('a').value);
+                    var Area =arista*arista;
+                    var Perimetro = 4*arista;
+                    document.getElementById('A').value=Area
+                    document.getElementById('P').value=Perimetro;
+                }
+   
+            </script>
+                </div>
+        </header>
+        <div class="capa"></div>
+
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>

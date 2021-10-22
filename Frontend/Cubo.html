@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cubo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+            <div class="parrafo">
+                <h2>¿Qué es un Cubo?</h2>
+            <p>El cubo o hexaedro regular es un poliedro, o figura geométrica tridimensional, con seis lados iguales, cada uno de los cuales es un polígono regular, específicamente, un cuadrado.</p>
+            <h2>Elementos de un cubo o hexaedro regular</h2>
+            <p>
+                •	Caras: Son los lados del poliedro que, como mencionamos, son seis polígonos iguales. En este caso, son los cuadrados formados por estos grupos de cuatro puntos: ABCD, CDEF, CBFG, EFGH, GHAB, AHED, BGFC. <br>
+                •	Aristas: La arista es el segmento que corresponde a la unión de dos caras: AB, BC, CD, AD, EF, FG, EH, HG, ED, FC, HA, GB.<br>
+                •	Vértices: Son aquellos puntos donde se unen las aristas: A, B, C, D, E, F, G, H.<br>
+                •	Diagonal: Línea que se traza de un vértice al vértice opuesto de la cara que se encuentra al frente. El cubo tiene cuatro diagonales que se cruzan en el centro de la figura. En la imagen de abajo serían las líneas punteadas: HC, AF, EB y DG.<br>
+                •	Ángulo diedro: Se forma por la unión de dos caras.<br>
+                •	Ángulo poliedro: Es aquel que se constituye por los lados que coinciden en un solo vértice.
+
+            </p>
+            <h2>¿Cómo se calcula el área y volumen de un cubo?</h2>  
+            <p>
+                Area = 6 × a^2 <br>
+                volumen = a^3
+            </p>
+            <br>
+                 <p>Calcular area y volumen<br>
+                 </p>
+                 <form id="formulario">
+                    arista: <input type="text" name="nombre" id ="a"> metros.
+                    <br>
+                          
+             </form>
+             <button onclick="Area()">Calcular Area y Volumen</button> <br>
+              <h2>Resultado</h2>
+              Area: <input type="text"  id="A">metros2.<br>
+              Volumen: <input type="text"  id="V">metros3.
+              <script>
+                function Area()
+                {
+                    var arista=Number(document.getElementById('a').value);
+                   
+                    var Area=6*(arista*arista);
+                    var Volumen=arista*arista*arista;
+                    document.getElementById('A').value=Area
+                    document.getElementById('V').value=Volumen;
+                }
+   
+            </script>
+        </div>
+        </header>
+        <div class="capa"></div>
+
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>

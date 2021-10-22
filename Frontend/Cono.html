@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cono</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+
+            <div class="parrafo">
+                <h2>¿Qué es un Cono?</h2>
+                <p>
+                    El cono es entonces un cuerpo geométrico con una base circular que está unida a un punto exterior llamo vértice. <br>
+                    Cabe precisar que el cono es un cuerpo de revolución. Es decir, puede obtener haciendo girar una figura o superficie plana alrededor de un eje. 
+                </p>
+                <h2>Elementos de un Cono</h2>
+                <p>
+                
+                    •	Base: Es el círculo sobre el cual se forma el cuerpo del cono. Su radio (r) es el segmento AC.<br>
+                    •	Directriz: Es el perímetro de la base del cono.<br>
+                    •	Generatriz ( segmento BC de longitud L): Es la recta que une el vértice con cualquier punto de la directriz. Es decir, cualquier segmento que une el vértice con el contorno de la base. Además, es la hipotenusa del triángulo rectángulo que se está girando para formar el cono.<br>
+                    •	Altura (segmento AB de longitud h): Es el segmento perpendicular que une vértice y la base. Coincide con el cateto alrededor del cual rota el triángulo para generar el cono.<br>   
+                </p>
+           
+                <h2>¿Cómo se calcula el área y volumen de un cono?</h2>
+                  <p>
+                    AreaTotal = ㄫ × r × (g + r ) <br>
+                    Volumen = ㄫ × r^2 × (h) / 3
+                  </p>
+                  <br>
+                 <p>Calcular area y Volumen<br>
+                 </p>
+                 <form id="formulario">
+                    radio: <input type="text" name="nombre" id ="r"> metros.
+                    <br>
+                    generatriz: <input type="text" name="nombre" id="g"> metros.
+                    <br>
+                    altura: <input type="text" name="nombre" id ="h"> metros.
+                    <br>       
+             </form>
+             <button onclick="Area()">Calcular Area y volumen</button> <br>
+              <h2>Resultado</h2>
+              Area: <input type="text"  id="A">metros2.<br>
+              Volumen: <input type="text"  id="V">metros3.
+                <script>
+                    function Area()
+                    {
+                        var radio=Number(document.getElementById('r').value);
+                        var generatriz=Number(document.getElementById('g').value);
+                        var altura=Number(document.getElementById('h').value);
+                        var Area=3.14*radio*(generatriz+radio);
+                        var Volumen = 3.14*(radio*radio)*(altura)/3;
+                        document.getElementById('A').value=Area;
+                        document.getElementById('V').value=Volumen;
+                    }
+       
+                </script>
+            </div>
+        
+        </header>
+        <div class="capa"></div>
+
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>

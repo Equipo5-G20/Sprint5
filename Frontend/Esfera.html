@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Esfera</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+            <div class="parrafo">
+                <h2>¿Qué es una Esfera?</h2>
+                <p>La esfera es un cuerpo geométrico formado generado por una semicircunferencia que gira alrededor de un determinado eje.</p>
+                <h2>Elementos de una esfera</h2>
+                <p>
+                    •	Eje: Es la recta imaginaria sobre la cual gira la semicircunferencia que forma la esfera. <br>
+•	Centro: Es el punto equidistante a cualquier punto del contorno de la esfera, es decir, de la superficie esférica.<br>
+•	Radio (Segmento AD): Es la distancia entre el centro y cualquier punto de la superficie esférica.<br>
+•	Cuerda: Es el segmento que une dos puntos cualesquiera de la superficie esférica.<br>
+•	Diámetro (Segmento BC): Es aquella cuerda que tiene la particularidad de pasar por el centro de la esfera. Su longitud es el doble del radio.<br>
+•	Eje: Es la recta imaginaria respecto a la cual gira la semicircunferencia que forma la esfera.<br>
+•	Meridianos: Son las circunferencias que se obtienen al cortar la esfera con planos que albergan al eje.<br>
+•	Paralelos: Son las circunferencias resultantes de cortar la esfera con planos que sean perpendiculares al eje (que corten el eje formando un ángulo de 90º).<br>
+•	Polos (Punto B y Punto C): Son los puntos del eje ubicados en la parte superior e inferior de la superficie esférica.<br>
+
+                </p>
+                <h2>¿Cómo se calcula el área y volumen de una Esfera?</h2>
+                <p>
+                    Area=4 × π × r^2 <br>
+                    Volumen=(4/3) × π × r^3
+
+                </p>
+                <br>
+                 <p>Calcular area y volumen<br>
+                 </p>
+                 <form id="formulario">
+                    radio: <input type="text" name="nombre" id ="r"> metros.
+                    <br>
+                          
+             </form>
+             <button onclick="Area()">Calcular Area y Volumen</button> <br>
+              <h2>Resultado</h2>
+              Area: <input type="text"  id="A">metros2.<br>
+              Volumen: <input type="text"  id="V">metros3.
+              <script>
+                  function Area()
+                  {
+                      var radio=Number(document.getElementById('r').value);
+                      var Area=4*3.14*(radio*radio);
+                      var Volumen=(4/3)*3.14*(radio*radio*radio);
+                      document.getElementById('A').value=Area
+                      document.getElementById('V').value=Volumen;
+                  }
+     
+              </script>
+            </div>
+        </header>
+        <div class="capa"></div>
+
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>

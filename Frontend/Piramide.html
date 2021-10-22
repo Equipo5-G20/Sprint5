@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Piramide</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+            <div class="parrafo">
+                <h2>¿Qué es una Piramide?</h2>
+                <p>La pirámide es una figura tridimensional con una base, que es un polígono, y cuyos vértices se unen en un único punto exterior.</p>
+                <h2>Elementos de una piramide</h2>
+                <p>
+                    •	Vértice de la pirámide: Es el punto en el que coinciden las caras laterales del polígono. <br>
+•	Base: Es el polígono cuyos vértices se unirán en el vértice de la pirámide.<br>
+•	Altura: Es el segmento perpendicular que une el vértice de la pirámide con la base (formando un ángulo de 90º).<br>
+•	Arista lateral: Es el segmento que une un vértice de la base con el vértice de la pirámide.<br>
+•	Cara lateral: Región triangular que une un segmento de la base con el vértice de la pirámide.<br>
+•	Apotema: Es el segmento que une el vértice de la pirámide con cualquiera de los lados de la base, coincide con la altura de la cara lateral.
+
+                </p>
+                <h2>¿Cómo se calcula el área y volumen de una Piramide?</h2>
+                <p>
+                    Area=L × (L + √4 × h^2 + L^2) <br>
+                    Volumen=(L^2 × h)/3
+                </p>
+                <br>
+                 <p>Calcular area y volumen<br>
+                 </p>
+                 <form id="formulario">
+                    Lado: <input type="text" name="nombre" id ="L"> metros.
+                    <br>
+                    Altura: <input type="text" name="nombre" id="h"> metros.
+                    <br>                
+                         
+                          
+             </form>
+             <button onclick="Area()">Calcular Area y Volumen</button> <br>
+              <h2>Resultado</h2>
+              Area: <input type="text"  id="A">metros2.<br>
+              Volumen: <input type="text"  id="V">metros3.
+              <script>
+                  function Area()
+                  {
+                      var L=Number(document.getElementById('L').value);
+                      var Altura=Number(document.getElementById('h').value);
+                      var Area=L*(L+Math.sqrt(4*(Altura*Altura)+(L*L)));
+                      var Volumen=(((L*L)*Altura)/3);
+                      document.getElementById('A').value=Area
+                      document.getElementById('V').value=Volumen;
+                  }
+     
+              </script>
+            </div>
+        </header>
+        <div class="capa"></div>
+
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>

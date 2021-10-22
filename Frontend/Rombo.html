@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rombo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilo_figura.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1>Geometria a la mano</h1>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="menu usuario.html">Usuario</a>
+                </nav>
+            </div>
+            <div class="parrafo">
+                <h2>¿Qué es un Rombo?</h2>
+                <p>
+                    Un rombo es una figura geométrica plana de cuatro lados de igual longitud y que tiene sus lados opuestos paralelos, por lo tanto, es un paralelogramo. El rombo consiste en la unión de sus lados por cuatro puntos llamados vértices. Los ángulos internos del rombo son diferentes a 90° y los ángulos opuestos son iguales, por lo tanto, se tienen 2 ángulos agudos y 2 ángulos obtusos.
+                </p>
+                <h2>Elementos de un Rombo</h2>
+                <p>
+                    •	Vértices: A, B, C, D. <br>
+•	Lados: AB, BC, DC, AD. Donde AB=DC=AD=BC <br>
+•	Diagonales: AC, DB. <br>
+•	Ángulos interiores: α, β, γ, δ donde α=β y δ=γ
+
+                </p>
+                <h2>¿Cómo se calcula el área y perimetro de un Rombo?</h2>
+                <p>
+                    Área = (D1 × D2)/2 <br>
+                    Perímetro = 4 × a
+                </p>
+                <br>
+                <p>Calcular area y perimetro<br>
+                </p>
+                <form id="formulario">
+                   Diagonal1: <input type="text" name="nombre" id ="D1"> metros.
+                   <br>
+                   Diagonal2: <input type="text" name="nombre" id ="D2"> metros.
+                   <br> 
+                   arista: <input type="text" name="nombre" id="a"> metros.
+                   <br>               
+                        
+                         
+            </form>
+            <button onclick="Area()">Calcular Area y Perimetro</button> <br>
+             <h2>Resultado</h2>
+             Area: <input type="text" name="respuesta" id="A">metros2.<br>
+             Perimetro: <input type="text" name="respuesta" id="P">metros.
+             <script>
+               function Area()
+               {
+                   var Diagonal1=Number(document.getElementById('D1').value);
+                   var Diagonal2=Number(document.getElementById('D2').value);
+                   var arista=Number(document.getElementById('a').value);
+                   var Area =(Diagonal1*Diagonal2)/2;
+                   var Perimetro = 4*arista;
+                   document.getElementById('A').value=Area
+                   document.getElementById('P').value=Perimetro;
+               }
+  
+           </script>
+            </div>
+        </header>
+        <div class="capa"></div>
+
+        <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		
+		<nav>
+			<h3>Figuras 2d</h3>
+			<a href="Cuadrado.html">Cuadrado</a>
+			<a href="Triangulo.html">Triangulo</a>
+			<a href="Rectangulo.html">Rectangulo</a>
+			<a href="Circulo.html">Circulo</a>
+			<a href="Rombo.html">Rombo</a>
+			<h3>Figuras 3d</h3>
+			<a href="Cubo.html">Cubo</a>
+			<a href="Piramide.html">Piramide</a>
+			<a href="Cilindro.html">Cilndro</a>
+			<a href="Cono.html">Cono</a>
+			<a href="Esfera.html">Esfera</a>
+			
+		</nav>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>
